@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Digitale Uhr</title>
+  </head>
+  <body style="font-size:20px; background-image:url('images/ice.jpg')">
+      <style type="text/css">
+      #div1 {
+          width: 370px;
+          height: 40px;
+          position: relative;
+          top: 100px;
+          left: 520px;
+          background-color: black;
+          display: inline-block;
+          text-align: center;
+          font-size: 30px;
+      }
+      </style>
+
+
+      <h1 style="text-align: center; color: white">Meine digitale Uhr</h1>
+      <div id="div1" style="color: yellow"></div>
+
+     
+
+      <script type="text/javascript">
+
+      function Clock() {
+        var days = new Array();  
+        days = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+        var day = new Date().getDay();
+        var date = new Date().getDate();
+        date = ((date<10)? "0":":")+ date + ".";
+        var month = new Date().getMonth()+1;
+        month = ((month<10)? "0": ":")+month + ".";
+        var year = new Date().getFullYear();
+        year = ((year<1900)? year+1900 : year) + ",";
+        var hour = new Date().getHours();
+        hour = ((hour<10)? "0": ":")+hour;
+        var min = new Date().getMinutes();
+        min = ((min<10)? ":0": ":")+min;
+        var sec = new Date().getSeconds();
+        sec = ((sec<10)? ":0": ":")+sec;
+        var time = "";
+        time = $("#div1").val();
+        time = days[day]+"&nbsp;"+date+month+year+"&nbsp;"+hour+min+sec ;     
+        
+        $("#div1").html(time);
+
+        var id=setTimeout("Clock()",1000);       // führt dazu dass die Zeit läuft in Sekunden, ansonsten bleibt die Zeit stehen
+      }
+      
+      $("#div1").html(Clock());
+        
+        
+
+      </script>
+
+
+  </body>
+  </html>
