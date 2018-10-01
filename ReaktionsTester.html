@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Reaktionstester</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="50">
+        <style type="text/css">
+            
+            li {
+                list-style: none;
+                padding: 10px;
+            }
+            .jumbotron {
+                width: 100%;
+                height: 700px;
+                text-align:center; color:black; background-image:url('images/color.jpg'); font-weight:600; font-size:20px;
+            }
+            .row {
+                text-align: center;
+            }
+            .card-img-top {
+                width: 100%;
+            }
+            #footer {
+                background-color: aqua;
+                text-align: center;
+                padding-top: 50px;
+                margin: auto;
+            }
+            body {
+                background-color: #D4D7E6;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            .jumbotron  {
+                text-align:center; color:black; background-image:url('images/color.jpg'); font-weight:600; font-size:20px;
+            }
+            #div1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: inline-block;
+            position: relative;
+        }
+
+            
+        </style>
+
+        <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar">
+            <a class="navbar-brand" href="#">MyApps</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="text-align:left">
+                    <li class="nav-item active">
+                        <a style="background-color: none" class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meineArbeit.html">Meine Arbeit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Apps herunterladen</a>
+                    </li>
+                </ul>
+                <form class="form-inline" action="/action_page.php" style="text-align: right">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Deine Email-Adresse">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="pwd" placeholder="Dein Passwort">
+                    </div>
+                    <button type="submit" class="btn btn-success">Anmelden</button>
+                </form>
+          
+            </div>
+        </nav>
+
+    
+        <div class="jumbotron" id="jumbotron">
+            <div class="container">
+                <h1 style="font-weight:800">Teste deine Reaktionszeit</h1>
+                <p>Klicke so schnell du kannst auf die Vierecken und Dreiecken</p>
+                <p><span>Klicken Sie auf OK zum starten</span>
+                <button id="button1" type="button">OK</button></p>
+                <p><span>Deine Zeit: </span><span style="color:yellow"></span></p>
+                <div id="div1"></div>
+            </div>
+        </div>
+
+        <div class="container" id="mehrInfos" style="background-color: #D4D7E6"> 
+            <div class="row">
+                <h1>Darum ist diese App so toll!</h1>
+                <p class="lead">Zusammenfassung der tollen Features!</p>
+            </div>
+        </div>
+      
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="card-img-top" src="images/IPhone-6-images-1.jpg" alt="">
+                    <div class="caption">
+                        <h3>Vorschaubild-Titel</h3>
+                        <p>Hier siehst du täglich, was gerade in der Welt der Apps passiert. 
+                            Wenn es etwas Wissenswertes gibt, teilen es unsere Experten hier mit dir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img class="card-img-top" src="images/IPhone-6-images-1.jpg" alt="">
+                        <div class="caption">
+                            <h3>Vorschaubild-Titel</h3>
+                            <p>Hier siehst du täglich, was gerade in der Welt der Apps passiert. 
+                                Wenn es etwas Wissenswertes gibt, teilen es unsere Experten hier mit dir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img class="card-img-top" src="images/IPhone-6-images-1.jpg" alt="">
+                            <div class="caption">
+                                <h3>Vorschaubild-Titel</h3>
+                                <p>Hier siehst du täglich, was gerade in der Welt der Apps passiert. 
+                                    Wenn es etwas Wissenswertes gibt, teilen es unsere Experten hier mit dir.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="container" id="footer">
+                <div class="row">
+                    <h2>Lade die App herunter!</h2>
+                    <p><a href="#"><img src="images/applestore_1444.png"></a></p>
+                </div>
+            </div>
+
+            <div class="container" id="footer2">
+                <div class="row">
+                    <p style="font-style:italic"><b>Built with HTML5, CSS3 and Bootstrap Copyright © 2018 Stephane Nankam</b></p>
+                </div>
+            </div>
+        
+        
+
+
+            <script type="text/javascript">
+
+
+            var start; var end; var time;
+
+
+
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+
+
+
+            function appear() {
+    
+                var timeOut = Math.random()*2000;
+
+                var left = Math.random()*300 + "px";
+                var right = Math.random()*300 + "px";
+                var width = Math.random()*400 + "px";
+                var height = Math.random()*400 + "px";
+
+
+                setTimeout(function() {
+
+                    $("#div1").css("width", width); 
+                    $("#div1").css("height", height); 
+                    $("#div1").css("left", left);
+                    $("#div1").css("right", right);
+                    $("#div1").css("left", left);
+        
+                    if(Math.random() > 0.5) {
+                        $("#div1").css("border-radius", "50%");
+                    }
+                    else {
+                        $("#div1").css("border-radius", "0");
+                    }
+
+                    $("#div1").css("background-color", getRandomColor());
+                    $("#div1").show();
+
+                    start = new Date().getTime();
+
+                }, timeOut );
+     
+            }
+
+
+
+            $("#button1").click(function() {
+
+                $("#div1").click(function() {
+
+                    end = new Date().getTime();
+                    time = (end - start)/1000;
+
+                    $("#div1").hide();
+                    $("#time").html(time + "s");
+
+                    appear();
+                });
+
+                appear();
+            });
+
+
+
+            </script>
+
+        </body>
+    </html>
