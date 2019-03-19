@@ -1,0 +1,23 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="Panel1" runat="server" Height="1px" Width="672px">
+            <asp:Button ID="Home" runat="server" Text="Home" BackColor="GradientInactiveCaption" BorderStyle="None" OnClick="Home_Click" />
+            <asp:Button ID="Button2" runat="server" Text="List of Theators" BackColor="GradientInactiveCaption" OnClick="Button2_Click" />
+            <asp:Button ID="Button3" runat="server" Text="List of phone nos" BackColor="GradientInactiveCaption" OnClick="Button3_Click" />
+            <asp:Button ID="Button4" runat="server" Text="Contactus" BackColor="GradientInactiveCaption" BorderStyle="None" OnClick="Button4_Click" />
+            <asp:Button ID="Button5" runat="server" Text="Photogallary" BackColor="GradientInactiveCaption" OnClick="Button5_Click" /><asp:Button ID="Button6" runat="server" Text="Ticket Booking" BackColor="GradientInactiveCaption" OnClick="Button6_Click" />&nbsp;&nbsp;</asp:Panel>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>
