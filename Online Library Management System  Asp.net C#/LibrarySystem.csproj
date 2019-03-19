@@ -1,0 +1,933 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{B7549936-3C77-4B3E-81FA-F2A937AE9104}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "\@Resources\Library System.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "LibrarySystem"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "LibrarySystem"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = "LibrarySystem.clsStart"
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "rptAdjustments.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptAdjustments1.cs"
+                />
+                <File
+                    RelPath = "rptAdjustments1.cs"
+                    DependentUpon = "rptAdjustments.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptBarrowedBooks.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptBarrowedBooks.cs"
+                />
+                <File
+                    RelPath = "rptBarrowedBooks.cs"
+                    DependentUpon = "rptBarrowedBooks.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptBarrowers.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptBarrowers.cs"
+                />
+                <File
+                    RelPath = "rptBarrowers.cs"
+                    DependentUpon = "rptBarrowers.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptBarrowers_Fines.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptBarrowers_Fines.cs"
+                />
+                <File
+                    RelPath = "rptBarrowers_Fines.cs"
+                    DependentUpon = "rptBarrowers_Fines.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptBooks.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptBooks.cs"
+                />
+                <File
+                    RelPath = "rptBooks.cs"
+                    DependentUpon = "rptBooks.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptBooks_All.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptBooks_All.cs"
+                />
+                <File
+                    RelPath = "rptBooks_All.cs"
+                    DependentUpon = "rptBooks_All.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptDueBooks.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptDueBooks.cs"
+                />
+                <File
+                    RelPath = "rptDueBooks.cs"
+                    DependentUpon = "rptDueBooks.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptInventory.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptInventory.cs"
+                />
+                <File
+                    RelPath = "rptInventory.cs"
+                    DependentUpon = "rptInventory.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptLibrarians.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptLibrarians.cs"
+                />
+                <File
+                    RelPath = "rptLibrarians.cs"
+                    DependentUpon = "rptLibrarians.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "rptReturnedBooks.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "rptReturnedBooks.cs"
+                />
+                <File
+                    RelPath = "rptReturnedBooks.cs"
+                    DependentUpon = "rptReturnedBooks.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@CLASS\AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CLASS\clsApp.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CLASS\clsConnections.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CLASS\clsFunctions.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CLASS\clsInstitutionSetup.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CLASS\clsStart.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CLASS\clsUserLogs.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CLASS\clsVariables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CONTROLS\ctrlSeparator.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@CONTROLS\ctrlSeparator.resx"
+                    DependentUpon = "ctrlSeparator.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@DATASETS\dsAdjustment.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsAdjustment.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsAdjustment.cs"
+                    DependentUpon = "dsAdjustment.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsAdjustment.xsx"
+                    DependentUpon = "dsAdjustment.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowed.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsBarrowed.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowed.cs"
+                    DependentUpon = "dsBarrowed.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowed.xsx"
+                    DependentUpon = "dsBarrowed.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowers.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsBarrowers.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowers.cs"
+                    DependentUpon = "dsBarrowers.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowers.xsx"
+                    DependentUpon = "dsBarrowers.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowers_Fines.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsBarrowers_Fines.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowers_Fines.cs"
+                    DependentUpon = "dsBarrowers_Fines.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBarrowers_Fines.xsx"
+                    DependentUpon = "dsBarrowers_Fines.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBooks.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsBooks.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBooks.cs"
+                    DependentUpon = "dsBooks.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsBooks.xsx"
+                    DependentUpon = "dsBooks.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@DATASETS\dsDueBooks.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsDueBooks.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsDueBooks.cs"
+                    DependentUpon = "dsDueBooks.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsDueBooks.xsx"
+                    DependentUpon = "dsDueBooks.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@DATASETS\dsInventory.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsInventory.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsInventory.cs"
+                    DependentUpon = "dsInventory.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsInventory.xsx"
+                    DependentUpon = "dsInventory.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@DATASETS\dsLibrarians.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsLibrarians.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsLibrarians.cs"
+                    DependentUpon = "dsLibrarians.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsLibrarians.xsx"
+                    DependentUpon = "dsLibrarians.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@DATASETS\dsReturned.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsReturned.cs"
+                />
+                <File
+                    RelPath = "@DATASETS\dsReturned.cs"
+                    DependentUpon = "dsReturned.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "@DATASETS\dsReturned.xsx"
+                    DependentUpon = "dsReturned.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "@FORMS\Do_End.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\Do_End.resx"
+                    DependentUpon = "Do_End.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\Do_FIRST.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\Do_FIRST.resx"
+                    DependentUpon = "Do_FIRST.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMAbout.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMAbout.resx"
+                    DependentUpon = "FORMAbout.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMAdjustments.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMAdjustments.resx"
+                    DependentUpon = "FORMAdjustments.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMAdjustments_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMAdjustments_Modify.resx"
+                    DependentUpon = "FORMAdjustments_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks.resx"
+                    DependentUpon = "FORMBarrowedBooks.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks_Barrowers.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks_Barrowers.resx"
+                    DependentUpon = "FORMBarrowedBooks_Barrowers.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks_History.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks_History.resx"
+                    DependentUpon = "FORMBarrowedBooks_History.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks_New.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks_New.resx"
+                    DependentUpon = "FORMBarrowedBooks_New.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks_Returned.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowedBooks_Returned.resx"
+                    DependentUpon = "FORMBarrowedBooks_Returned.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowers.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowers.resx"
+                    DependentUpon = "FORMBarrowers.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowers_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowers_Modify.resx"
+                    DependentUpon = "FORMBarrowers_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowers_View.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBarrowers_View.resx"
+                    DependentUpon = "FORMBarrowers_View.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBooks.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBooks.resx"
+                    DependentUpon = "FORMBooks.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBooks_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBooks_Modify.resx"
+                    DependentUpon = "FORMBooks_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBooks_Monitoring.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBooks_Monitoring.resx"
+                    DependentUpon = "FORMBooks_Monitoring.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBooks_View.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMBooks_View.resx"
+                    DependentUpon = "FORMBooks_View.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCategory.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCategory.resx"
+                    DependentUpon = "FORMCategory.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCategory_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCategory_Modify.resx"
+                    DependentUpon = "FORMCategory_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCategory_View.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCategory_View.resx"
+                    DependentUpon = "FORMCategory_View.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCourse_View.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCourse_View.resx"
+                    DependentUpon = "FORMCourse_View.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCourses.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCourses.resx"
+                    DependentUpon = "FORMCourses.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCourses_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMCourses_Modify.resx"
+                    DependentUpon = "FORMCourses_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMDueBooks.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMDueBooks.resx"
+                    DependentUpon = "FORMDueBooks.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLevel.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLevel.resx"
+                    DependentUpon = "FORMLevel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLevel_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLevel_Modify.resx"
+                    DependentUpon = "FORMLevel_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLevel_View.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLevel_View.resx"
+                    DependentUpon = "FORMLevel_View.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLibrarian.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLibrarian.resx"
+                    DependentUpon = "FORMLibrarian.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLibrarian_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLibrarian_Modify.resx"
+                    DependentUpon = "FORMLibrarian_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLibrarySetup.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLibrarySetup.resx"
+                    DependentUpon = "FORMLibrarySetup.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLogDetails.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMLogDetails.resx"
+                    DependentUpon = "FORMLogDetails.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMReturnBooks.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMReturnBooks.resx"
+                    DependentUpon = "FORMReturnBooks.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMSchoolYear.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMSchoolYear.resx"
+                    DependentUpon = "FORMSchoolYear.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMSchoolYear_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMSchoolYear_Modify.resx"
+                    DependentUpon = "FORMSchoolYear_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMSchoolYear_View.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMSchoolYear_View.resx"
+                    DependentUpon = "FORMSchoolYear_View.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMSearch.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMSearch.resx"
+                    DependentUpon = "FORMSearch.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMShortcuts.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMShortcuts.resx"
+                    DependentUpon = "FORMShortcuts.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMViewer.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMViewer.resx"
+                    DependentUpon = "FORMViewer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMZipCodes.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMZipCodes.resx"
+                    DependentUpon = "FORMZipCodes.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMZipCodes_Modify.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMZipCodes_Modify.resx"
+                    DependentUpon = "FORMZipCodes_Modify.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\FORMZipCodes_View.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\FORMZipCodes_View.resx"
+                    DependentUpon = "FORMZipCodes_View.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\LOGSCREEN.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\LOGSCREEN.resx"
+                    DependentUpon = "LOGSCREEN.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\MDI.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\MDI.resx"
+                    DependentUpon = "MDI.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "@FORMS\SPLASHSCREEN.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "@FORMS\SPLASHSCREEN.resx"
+                    DependentUpon = "SPLASHSCREEN.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </CSHARP>
+</VisualStudioProject>
+
