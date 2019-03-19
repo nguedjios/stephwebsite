@@ -1,0 +1,111 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+            <tr>
+                <td colspan="4" style="height: 92px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 141px; height: 222px">
+                </td>
+                <td colspan="1" style="font-weight: bold; font-size: 55pt; width: 372px; color: #ff3333;
+                    font-style: italic; font-family: 'Palace Script MT', Sans-Serif; height: 222px;
+                    background-color: #99ffff; font-variant: normal">
+                    &nbsp;OnlineFoodShopping</td>
+                <td colspan="2" style="width: 120px; height: 222px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 141px; height: 227px">
+                    <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="Blue"
+                        Style="left: 25px; position: relative; top: -444px" Text="Products" Width="94px"></asp:Label></td>
+                <td colspan="3" style="height: 227px">
+                    <asp:Image ID="Image1" runat="server" Height="218px" ImageUrl="~/Images/party tray.jpg"
+                        Style="left: -242px; position: relative; top: -220px" Width="232px" />
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Style="left: 107px; position: relative;
+                        top: -428px; font-size: 20pt;" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" StaticSubMenuIndent="10px">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem Text="Login" Value="Login"></asp:MenuItem>
+                            <asp:MenuItem Text="Categories" Value="Categories">
+                                <asp:MenuItem Text="Breads" Value="Breads"></asp:MenuItem>
+                                <asp:MenuItem Text="Desserts" Value="Desserts"></asp:MenuItem>
+                                <asp:MenuItem Text="Fast Food" Value="Fast Food"></asp:MenuItem>
+                                <asp:MenuItem Text="Fruits" Value="Fruits"></asp:MenuItem>
+                                <asp:MenuItem Text="Meats" Value="Meats"></asp:MenuItem>
+                                <asp:MenuItem Text="Party Trays" Value="Party Trays"></asp:MenuItem>
+                                <asp:MenuItem Text="Sea Food" Value="Sea Food"></asp:MenuItem>
+                                <asp:MenuItem Text="Vegetables" Value="Vegetables"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#B5C7DE" />
+                        <StaticSelectedStyle BackColor="#507CD1" />
+                        <DynamicSelectedStyle BackColor="#507CD1" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                    </asp:Menu>
+                    &nbsp;
+                    <asp:Image ID="Image2" runat="server" Height="222px" ImageUrl="~/Images/pF001919[1].jpg"
+                        Style="left: 808px; position: relative; top: -698px" Width="196px" />&nbsp;
+                    <asp:Label ID="Label2" runat="server" Style="font-size: x-large; left: -397px; color: #ff66ff;
+                        position: relative; top: -976px" Text="Search" Width="80px"></asp:Label>
+                    <asp:TextBox ID="TextBox1" runat="server" Style="left: -335px; position: relative;
+                        top: -978px" Width="157px"></asp:TextBox>
+                    <asp:TreeView ID="TreeView1" runat="server" ImageSet="Faq" ShowLines="True" Style="left: -243px;
+                        position: relative; top: -638px">
+                        <ParentNodeStyle Font-Bold="False" />
+                        <HoverNodeStyle Font-Underline="True" ForeColor="Purple" />
+                        <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                        <Nodes>
+                            <asp:TreeNode Text="Breads" Value="Breads"></asp:TreeNode>
+                            <asp:TreeNode Text="Desserts" Value="Desserts"></asp:TreeNode>
+                            <asp:TreeNode Text="Fast Food" Value="Fast Food"></asp:TreeNode>
+                            <asp:TreeNode Text="Fruits" Value="Fruits"></asp:TreeNode>
+                            <asp:TreeNode Text="Meats" Value="Meats"></asp:TreeNode>
+                            <asp:TreeNode Text="Party Trays" Value="Party Trays"></asp:TreeNode>
+                            <asp:TreeNode Text="Sea Food" Value="Sea Food"></asp:TreeNode>
+                            <asp:TreeNode Text="Vegetables" Value="Vegetables"></asp:TreeNode>
+                            <asp:TreeNode Text="Menu Boards" Value="Menu Boards"></asp:TreeNode>
+                            <asp:TreeNode Text="Search Images" Value="Search Images"></asp:TreeNode>
+                        </Nodes>
+                        <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="DarkBlue" HorizontalPadding="5px"
+                            NodeSpacing="0px" VerticalPadding="0px" />
+                    </asp:TreeView>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 141px; height: 180px">
+                </td>
+                <td colspan="3" style="height: 180px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width: 141px; height: 129px">
+                </td>
+                <td colspan="3" style="height: 129px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
